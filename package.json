@@ -1,0 +1,24 @@
+{
+  "name": "ajax",
+  "version": "0.0.0",
+  "description": "Ajax module for Anchor.js.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anchorjs/ajax.git"
+  },
+  "bugs": {
+    "url": "http://github.com/anchorjs/ajax/issues"
+  },
+  "author": { "name": "Jared Hanson", "email": "jaredhanson@gmail.com", "url": "http://www.jaredhanson.net/" },
+  "licenses": [ {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/MIT" 
+  } ],
+  "main": "main",
+  "volo": {
+    "dependencies": {
+      "class": "github:anchorjs/class",
+      "events": "github:anchorjs/events"
+    }
+  }
+}
