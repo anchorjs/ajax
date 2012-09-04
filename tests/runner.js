@@ -14,7 +14,7 @@ require(['require',
 function(require, _mocha, _chai) {
   mocha.setup('bdd');
   
-  require(['test.ajax'],
+  require(['suite'],
   function() {
     mocha.run();
   });
