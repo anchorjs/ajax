@@ -1,10 +1,10 @@
 require.config({
   paths:{
     'ajax': '../',
-    'class': 'js/class',
-    'events': 'js/events',
-    'mocha': 'vendor/mocha/1.0.1/mocha',
-    'chai': 'vendor/chai/0.5.2/chai'
+    'class': 'vendor/class',
+    'events': 'vendor/events',
+    'mocha': 'vendor/mocha/mocha',
+    'chai': 'vendor/chai/chai'
   }
 });
 
