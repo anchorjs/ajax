@@ -9,16 +9,23 @@
   "bugs": {
     "url": "http://github.com/anchorjs/ajax/issues"
   },
-  "author": { "name": "Jared Hanson", "email": "jaredhanson@gmail.com", "url": "http://www.jaredhanson.net/" },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "main": "main",
   "volo": {
+    "baseUrl": "vendor",
     "dependencies": {
-      "class": "github:anchorjs/class",
-      "events": "github:anchorjs/events"
+      "class": "github:anchorjs/class/master",
+      "events": "github:anchorjs/events/master"
     }
   }
 }

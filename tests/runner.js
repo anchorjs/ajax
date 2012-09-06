@@ -1,8 +1,8 @@
 require.config({
   paths:{
     'ajax': '../',
-    'class': 'vendor/class',
-    'events': 'vendor/events',
+    'class': '../vendor/class',
+    'events': '../vendor/events',
     'mocha': 'vendor/mocha/mocha',
     'chai': 'vendor/chai/chai'
   }
@@ -14,7 +14,7 @@ require(['require',
 function(require, _mocha, _chai) {
   mocha.setup('bdd');
   
-  require(['suite'],
+  require(['./suite'],
   function() {
     mocha.run();
   });

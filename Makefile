@@ -9,4 +9,4 @@ test-browser:
 test-phantomjs:
 	$(PHANTOMJS) tests/vendor/phantomjs-mocha/scripts/mocha.js tests/runner/phantomjs.html
 
-.PHONY: test-phantomjs
+.PHONY: test-browser test-phantomjs

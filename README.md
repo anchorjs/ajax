@@ -6,8 +6,9 @@ as a test framework with [Chai](http://chaijs.com/) assertions.
 ##### Dependencies
 
 Prior to running tests, use [volo](https://github.com/volojs/volo) to fetch
-dependencies from GitHub.
+dependencies for both the module and tests from GitHub.
 
+    $ volo add
     $ cd tests
     $ volo add
 
