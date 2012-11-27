@@ -2,20 +2,20 @@ define(['exports',
         './lib/request'],
 function(exports, Request) {
 
-  // TODO: Implment options version of fn signature.
-  function request(url, method, callback) {
+  // TODO: Implement options version of fn signature.
+  function request(url, method, cb) {
     if (typeof method == 'function') {
-      callback = method;
+      cb = method;
       method = 'GET';
     }
     
     var req = new Request(url, method);
-    if (callback) req.on('response', callback);
+    if (cb) req.on('response', cb);
     return req;
   }
 
-  function get(url, callback) {
-    var req = request(url, 'GET', callback);
+  function get(url, cb) {
+    var req = request(url, 'GET', cb);
     req.end();
     return req;
   }
