@@ -1,4 +1,4 @@
-define(['ajax/main',
+define(['ajax',
         'chai'],
 function(ajax, chai) {
   var expect = chai.expect;

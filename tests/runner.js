@@ -1,11 +1,14 @@
 require.config({
-  paths:{
-    'ajax': '../',
+  paths: {
     'class': '../vendor/class',
-    'events': '../vendor/events',
     'mocha': 'vendor/mocha/mocha',
     'chai': 'vendor/chai/chai'
-  }
+  },
+  packages: [
+    { name: 'events', location: '../vendor/events' },
+    { name: 'ajax', location: '..' },
+    { name: 'phantomjs-mocha', location: '.../vendor/phantomjs-mocha' },
+  ]
 });
 
 require(['require',
