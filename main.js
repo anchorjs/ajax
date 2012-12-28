@@ -1,10 +1,17 @@
 define(['exports',
-        './lib/request'],
-function(exports, Request) {
+        './lib/request',
+        'url'],
+function(exports, Request, uri) {
 
-  // TODO: Implement options version of fn signature.
   function request(url, method, cb) {
-    if (typeof method == 'function') {
+    if (typeof url == 'object') {
+      var opts = url;
+      cb = method;
+      method = opts.method || 'GET';
+      url = uri.format(opts);
+      
+      // TODO: set headers from opts.headers
+    } else if (typeof method == 'function') {
       cb = method;
       method = 'GET';
     }
@@ -15,11 +22,10 @@ function(exports, Request) {
   }
 
   function get(url, cb) {
-    var req = request(url, 'GET', cb);
+    var req = request(url, cb);
     req.end();
     return req;
   }
-
 
   exports.request = request;
   exports.get = get;
