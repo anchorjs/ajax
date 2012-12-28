@@ -29,7 +29,6 @@
     "mocha-cloud-grid-view": "0.0.1"
   },
   "volo": {
-    "baseUrl": "vendor",
     "dependencies": {
       "class": "github:anchorjs/class/master",
       "events": "github:anchorjs/events/master",
