@@ -49,7 +49,7 @@ The API exposed by this module bears a superficial resemblance to the interface
 exported by Node's [HTTP](http://nodejs.org/api/http.html) module.  However,
 there are important distinctions that cause incompatibilities.  In particular,
 the stream interface is not supported by this module because the underlying XHR
-object hosted by the browser is not capable of streaming.
+object hosted by the browser is not capable of streaming data.
 
 Developers are advised to be aware of the differences between XHR requests and
 regular HTTP requests and implement accordingly.

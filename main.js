@@ -1,3 +1,13 @@
+/**
+ * ajax
+ *
+ * This module support for making HTTP requests using XHR.
+ *
+ * References:
+ *  - [XMLHttpRequest](http://www.w3.org/TR/XMLHttpRequest/)
+ *  - [XMLHttpRequest (WHATWG)](http://xhr.spec.whatwg.org/)
+ *  - [MDN > DOM](https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest)
+ */
 define(['exports',
         './lib/request',
         'url'],
