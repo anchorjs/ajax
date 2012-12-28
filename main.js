@@ -29,7 +29,7 @@ function(exports, Request, uri) {
 
   function get(url, cb) {
     var req = request(url, cb);
-    req.end();
+    req.send();
     return req;
   }
 
