@@ -1,9 +1,16 @@
-SOURCES = *.js lib/*.js
+SOURCES = main.js lib/*.js
 TESTS = test/*.test.js
+
+# ==============================================================================
+# Packaging
+# ==============================================================================
+
+build-browserify:
+	browserify -t deamdify main.js -o bundle.js
 
 
 # ==============================================================================
-# Browser Tests
+# Tests
 # ==============================================================================
 
 CHROME = open -a "Google Chrome"
@@ -26,7 +33,7 @@ test-firefox: test/www/js/lib
 test-safari: test/www/js/lib
 	$(SAFARI) $(WWW_TESTS)
 
-test-phantomjs: test/www/js/lib
+test-phantomjs: node_modules test/www/js/lib
 	$(MOCHA_PHANTOMJS) $(WWW_TESTS)
 
 # Prior to running tests on Sauce Labs, ensure that a local server is listening
@@ -35,16 +42,18 @@ test-phantomjs: test/www/js/lib
 #     $ java -jar Sauce-Connect.jar $SAUCE_LABS_USERNAME $SAUCE_LABS_ACCESS_KEY
 #     $ node test/cloud/server.js
 #
-test-cloud: test-saucelabs
-test-saucelabs:
+test-saucelabs: node_modules test/www/js/lib
 	clear && node test/cloud/terminal.js
 
 test/www/js/lib:
-	cd test/www && volo add 
+	cd test/www && volo add -nostamp
+
+node_modules:
+	npm install
 
 
 # ==============================================================================
-# Static Analysis
+# Code Quality
 # ==============================================================================
 
 JSHINT = jshint
@@ -52,6 +61,17 @@ JSHINT = jshint
 hint: lint
 lint:
 	$(JSHINT) $(SOURCES)
+
+
+# ==============================================================================
+# Clean
+# ==============================================================================
+
+clean:
+
+clobber: clean
+	rm -rf node_modules
+	rm -rf test/www/js/lib
 
 
 .PHONY: test test-chrome test-firefox test-safari test-phantomjs test-cloud test-saucelabs hint lint
