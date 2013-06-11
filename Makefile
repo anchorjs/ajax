@@ -40,10 +40,10 @@ test-phantomjs: node_modules test/www/js/lib
 # and Sauce Connect is tunneling requests to it.
 #
 #     $ java -jar Sauce-Connect.jar $SAUCE_LABS_USERNAME $SAUCE_LABS_ACCESS_KEY
-#     $ node test/cloud/server.js
+#     $ node test/auto/server.js
 #
 test-saucelabs: node_modules test/www/js/lib
-	clear && node test/cloud/terminal.js
+	clear && node test/auto/terminal-saucelabs.js
 
 test/www/js/lib:
 	cd test/www && volo add -nostamp
