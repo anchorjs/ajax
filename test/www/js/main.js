@@ -8,8 +8,7 @@ require.config({
   packages: [
     { name: 'ajax', location: '../../../..' },
     { name: 'events' },
-    { name: 'url' },
-    { name: 'mocha-cloud', location: '../support', main: 'mocha-cloud' }
+    { name: 'url' }
   ],
   shim: {
     'mocha': {

@@ -7,7 +7,8 @@
       "events": "github:anchorjs/events/master",
       "url": "github:anchorjs/url/master",
       "mocha": "github:visionmedia/mocha/1.x.x",
-      "chai": "github:chaijs/chai/1.x.x"
+      "chai": "github:chaijs/chai/1.x.x",
+      "mocha-results": "github:jaredhanson/mocha-results/1.x.x"
     }
   }
 }
