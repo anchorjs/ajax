@@ -6,7 +6,7 @@ require.config({
     'chai': 'chai/chai'
   },
   packages: [
-    { name: 'ajax', location: '../../../..' },
+    { name: 'ajax', location: '../../../..', main: 'ajax' },
     { name: 'xhr' },
     { name: 'events' },
     { name: 'url' }
