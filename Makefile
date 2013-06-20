@@ -1,4 +1,4 @@
-SOURCES = main.js
+SOURCES = *.js
 TESTS = test/*.test.js
 
 # ==============================================================================
@@ -7,7 +7,7 @@ TESTS = test/*.test.js
 
 build-browserify:
 	mkdir -p build
-	browserify -t deamdify main.js -o build/bundle.js
+	browserify -t deamdify ajax.js -o build/bundle.js
 	
 build-component: components
 	component build -u component-amd
