@@ -9,9 +9,9 @@
  *  - [MDN > DOM](https://developer.mozilla.org/en-US/docs/DOM/XMLHttpRequest)
  */
 define(['exports',
-        './lib/request',
+        'xhr',
         'url'],
-function(exports, Request, uri) {
+function(exports, xhr, uri) {
 
   function request(url, method, cb) {
     var headers;
@@ -27,13 +27,12 @@ function(exports, Request, uri) {
       method = 'GET';
     }
     
-    var req = new Request(url, method);
+    var req = xhr.request(url, method, cb);
     if (headers) {
       for (var name in headers) {
         req.setHeader(name, headers[name]);
       }
     }
-    if (cb) req.on('response', cb);
     return req;
   }
 

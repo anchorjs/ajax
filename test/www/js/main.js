@@ -7,6 +7,7 @@ require.config({
   },
   packages: [
     { name: 'ajax', location: '../../../..' },
+    { name: 'xhr' },
     { name: 'events' },
     { name: 'url' }
   ],

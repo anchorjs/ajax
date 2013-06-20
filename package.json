@@ -22,7 +22,7 @@
   ],
   "main": "main",
   "dependencies": {
-    "class": "git://github.com/anchorjs/class.git"
+    "xhr": "git://github.com/anchorjs/xhr.git"
   },
   "devDependencies": {
     "express": "3.x.x",
@@ -38,8 +38,7 @@
   },
   "volo": {
     "dependencies": {
-      "class": "github:anchorjs/class/master",
-      "events": "github:anchorjs/events/master",
+      "xhr": "github:anchorjs/xhr/master",
       "url": "github:anchorjs/url/master"
     }
   }
