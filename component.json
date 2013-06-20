@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "description": "Extended XHR with support for options.",
   "repo": "anchorjs/ajax",
-  "main": "main.js",
+  "main": "ajax.js",
   "scripts": [
-    "main.js"
+    "ajax.js"
   ],
   "dependencies": {
     "anchorjs/xhr": "*",

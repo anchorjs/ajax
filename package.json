@@ -20,7 +20,7 @@
       "url": "http://www.opensource.org/licenses/MIT"
     }
   ],
-  "main": "main",
+  "main": "ajax",
   "dependencies": {
     "xhr": "git://github.com/anchorjs/xhr.git"
   },
