@@ -1,0 +1,15 @@
+{
+  "name": "ajax",
+  "version": "0.0.0",
+  "description": "Extended XHR with support for options.",
+  "repo": "anchorjs/ajax",
+  "main": "main.js",
+  "scripts": [
+    "main.js"
+  ],
+  "dependencies": {
+    "anchorjs/xhr": "*",
+    "anchorjs/url": "*"
+  },
+  "license": "MIT"
+}

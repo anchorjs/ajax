@@ -1,7 +1,7 @@
 {
   "name": "ajax",
   "version": "0.0.0",
-  "description": "Ajax module for Anchor.js.",
+  "description": "Extended XHR with support for options.",
   "repository": {
     "type": "git",
     "url": "git://github.com/anchorjs/ajax.git"
