@@ -1,0 +1,29 @@
+{
+  "name": "ajax",
+  "version": "0.0.0",
+  "description": "Extended XHR with support for options.",
+  "authors": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "homepage": "http://www.jaredhanson.net/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anchorjs/ajax.git"
+  },
+  "license": "MIT",
+  "main": "main.js",
+  "dependencies": {
+    "url": "git://github.com/anchorjs/url.git#master",
+    "xhr": "git://github.com/anchorjs/xhr.git#master"
+  },
+  "ignore": [
+    ".gitignore",
+    ".jshintrc",
+    "Makefile",
+    "README.md",
+    "component.json",
+    "package.json",
+    "test"
+  ]
+}
